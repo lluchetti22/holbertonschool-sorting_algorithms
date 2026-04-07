@@ -4,8 +4,9 @@
 
 /**
  * swap_nodes - bubble sorts
- * @array: The array of integers to sort.
- * @size: The size of the array.
+ * @list: The array of integers to sort.
+ * @n1: The size of the array.
+ * @n2: hey
  * return: array
  */
 void swap_nodes(listint_t **list, listint_t *n1, listint_t *n2)
@@ -32,8 +33,7 @@ n2->next = n1;
 
 /**
  * insertion_sort_list - bubble sorts
- * @array: The array of integers to sort.
- * @size: The size of the array.
+ * @list: The array of integers to sort.
  * return: array
  */
 
