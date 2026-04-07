@@ -19,7 +19,7 @@ tmp = *a;
 }
 
 /**
- * lomuto_partition - bubble sorts
+ * lomuto_partition - lomuto partitions
  * @array: The array of integers to sort.
  * @size: The size of the array.
  * @low: low int
