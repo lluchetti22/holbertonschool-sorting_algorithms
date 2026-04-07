@@ -3,11 +3,40 @@
 #include "sort.h"
 
 /**
- * bubble_sort - bubble sorts
+ * swap_nodes - bubble sorts
  * @array: The array of integers to sort.
  * @size: The size of the array.
  * return: array
  */
+void swap_nodes(listint_t **list, listint_t *n1, listint_t *n2)
+{
+if (n1->prev)
+{
+n1->prev->next = n2;
+}
+else
+{
+*list = n2;
+}
+
+if (n2->next)
+{
+n2->next->prev = n1;
+}
+
+n2->prev = n1->prev;
+n1->prev = n2;
+n1->next = n2->next;
+n2->next = n1;
+}
+
+/**
+ * insertion_sort_list - bubble sorts
+ * @array: The array of integers to sort.
+ * @size: The size of the array.
+ * return: array
+ */
+
 void insertion_sort_list(listint_t **list)
 {
 listint_t *current, *insert, *tmp;
