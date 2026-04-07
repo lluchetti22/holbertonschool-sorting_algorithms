@@ -19,12 +19,13 @@ tmp = *a;
 }
 
 /**
- * lomuto_partition - lomuto partitions
- * @array: The array of integers to sort.
- * @size: The size of the array.
- * @low: low int
- * @high: high int
- * return: array
+ * lomuto_partition - Implements the Lomuto partition scheme.
+ * @array: The array to partition.
+ * @size: Total size of the array (for printing).
+ * @low: The starting index of the partition.
+ * @high: The ending index of the partition (pivot).
+ *
+ * Return: The final partition index.
  */
 
 int lomuto_partition(int *array, size_t size, int low, int high)
